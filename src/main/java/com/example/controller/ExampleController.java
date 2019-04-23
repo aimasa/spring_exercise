@@ -20,10 +20,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.bean.User;
+import com.example.controller.impl.ExampleControllerImpl;
 
 @RestController
 @RequestMapping("/users")
-public class ExampleController {
+public class ExampleController implements ExampleControllerImpl{
 //	@RequestMapping("/")
 //	public String Index(Locale locale, Model model) {
 //		Date date = new Date();
